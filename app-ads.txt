@@ -1,0 +1,7 @@
+# app-ads.txt for Flutter-App-LL applications
+# Reference: https://iabtechlab.com/ads-txt/
+#
+# ==============================================================================
+# Google AdMob
+# ==============================================================================
+google.com, pub-XXXXXXXXXXXXXXXX, DIRECT, f08c47fec0942fa0
