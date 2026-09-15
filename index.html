@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chính sách quyền riêng tư | Privacy Policy - Hub</title>
+  <meta name="description" content="Chính sách quyền riêng tư cho ứng dụng Hub (Private Local File Hub)">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #2563eb;
+      --primary-hover: #1d4ed8;
+      --primary-light: #eff6ff;
+      --text-main: #0f172a;
+      --text-muted: #475569;
+      --bg-body: #f8fafc;
+      --bg-card: #ffffff;
+      --border: #e2e8f0;
+      --badge-bg: #dcfce7;
+      --badge-text: #15803d;
+      --radius: 12px;
+      --shadow: 0 4px 6px -1px rgb(0 0 0 / 0.05), 0 2px 4px -2px rgb(0 0 0 / 0.05);
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --text-main: #f8fafc;
+        --text-muted: #94a3b8;
+        --bg-body: #090d16;
+        --bg-card: #131b2e;
+        --border: #1e293b;
+        --badge-bg: #064e3b;
+        --badge-text: #6ee7b7;
+        --primary-light: #1e293b;
+      }
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background-color: var(--bg-body);
+      color: var(--text-main);
+      line-height: 1.7;
+      padding: 32px 16px 64px;
+    }
+
+    .container {
+      max-width: 860px;
+      margin: 0 auto;
+    }
+
+    header {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 36px 32px;
+      margin-bottom: 24px;
+      box-shadow: var(--shadow);
+      position: relative;
+    }
+
+    .header-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 16px;
+      margin-bottom: 20px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .brand-icon {
+      width: 48px;
+      height: 48px;
+      background: linear-gradient(135deg, #2563eb, #38bdf8);
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      font-weight: 700;
+      font-size: 22px;
+      box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
+    }
+
+    .brand-text h1 {
+      font-size: 24px;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+    }
+
+    .brand-text p {
+      font-size: 14px;
+      color: var(--text-muted);
+    }
+
+    .lang-switcher {
+      display: flex;
+      background: var(--bg-body);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 3px;
+      gap: 4px;
+    }
+
+    .lang-btn {
+      padding: 6px 14px;
+      font-size: 13px;
+      font-weight: 600;
+      border: none;
+      background: transparent;
+      color: var(--text-muted);
+      border-radius: 6px;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+
+    .lang-btn.active {
+      background: var(--bg-card);
+      color: var(--primary);
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    }
+
+    .badges {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 12px;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 12px;
+      font-weight: 600;
+      padding: 4px 10px;
+      background: var(--badge-bg);
+      color: var(--badge-text);
+      border-radius: 9999px;
+    }
+
+    .meta-info {
+      font-size: 13px;
+      color: var(--text-muted);
+      margin-top: 14px;
+      border-top: 1px solid var(--border);
+      padding-top: 14px;
+    }
+
+    .content-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 36px 32px;
+      box-shadow: var(--shadow);
+    }
+
+    h2 {
+      font-size: 19px;
+      font-weight: 700;
+      margin: 28px 0 12px;
+      color: var(--text-main);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      letter-spacing: -0.01em;
+    }
+
+    h2:first-of-type {
+      margin-top: 0;
+    }
+
+    p {
+      margin-bottom: 14px;
+      color: var(--text-muted);
+      font-size: 15px;
+    }
+
+    ul {
+      margin-bottom: 16px;
+      padding-left: 20px;
+      color: var(--text-muted);
+      font-size: 15px;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    strong {
+      color: var(--text-main);
+    }
+
+    .permission-box {
+      background: var(--bg-body);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 16px;
+      margin-bottom: 12px;
+    }
+
+    .permission-title {
+      font-weight: 600;
+      color: var(--primary);
+      font-size: 15px;
+      margin-bottom: 4px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .permission-desc {
+      font-size: 14px;
+      margin-bottom: 0;
+    }
+
+    .highlight-card {
+      background: var(--primary-light);
+      border-left: 4px solid var(--primary);
+      padding: 16px 20px;
+      border-radius: 0 8px 8px 0;
+      margin: 20px 0;
+    }
+
+    .highlight-card p {
+      color: var(--text-main);
+      font-size: 14.5px;
+      margin-bottom: 0;
+      font-weight: 500;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 36px;
+      font-size: 13px;
+      color: var(--text-muted);
+    }
+
+    .hidden {
+      display: none !important;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="header-top">
+        <div class="brand">
+          <div class="brand-icon">H</div>
+          <div class="brand-text">
+            <h1>Hub</h1>
+            <p>Private Local File Hub</p>
+          </div>
+        </div>
+
+        <div class="lang-switcher">
+          <button id="btn-vi" class="lang-btn active" onclick="switchLang('vi')">Tiếng Việt</button>
+          <button id="btn-en" class="lang-btn" onclick="switchLang('en')">English</button>
+        </div>
+      </div>
+
+      <div class="badges">
+        <span class="badge">🔒 100% Peer-to-Peer (P2P)</span>
+        <span class="badge">🚫 Không thu thập dữ liệu</span>
+        <span class="badge">☁️ Không Cloud Server</span>
+        <span class="badge">🎯 Không quảng cáo rác</span>
+      </div>
+
+      <div class="meta-info">
+        <span id="date-vi">Ngày có hiệu lực: 15 tháng 09, 2026 | Phiên bản: 1.0</span>
+        <span id="date-en" class="hidden">Effective Date: September 15, 2026 | Version: 1.0</span>
+      </div>
+    </header>
+
+    <!-- BẢN TIẾNG VIỆT -->
+    <main id="content-vi" class="content-card">
+      <h2>1. Giới thiệu & Cam kết bảo mật</h2>
+      <p>
+        Chào mừng bạn đến với <strong>Hub — Private Local File Hub</strong> (sau đây gọi là "Ứng dụng"). Chúng tôi cam kết tuyệt đối trong việc bảo vệ quyền riêng tư và quyền kiểm soát dữ liệu của người dùng.
+      </p>
+      <div class="highlight-card">
+        <p>
+          <strong>Cam kết cốt lõi:</strong> Hub được thiết kế theo nguyên tắc <em>Zero-Knowledge</em> và hoạt động hoàn toàn cục bộ (Local Peer-to-Peer). Toàn bộ quá trình truyền tải tệp tin, hình ảnh, video và tài liệu diễn ra trực tiếp giữa các thiết bị của bạn thông qua mạng nội bộ (Wi-Fi/LAN). Chúng tôi <strong>KHÔNG</strong> thu thập, <strong>KHÔNG</strong> tải lên máy chủ trung gian và <strong>KHÔNG</strong> bán bất kỳ dữ liệu cá nhân nào của bạn.
+        </p>
+      </div>
+
+      <h2>2. Thông tin thu thập & Xử lý</h2>
+      <p>Chúng tôi tôn trọng quyền riêng tư tuyệt đối của bạn:</p>
+      <ul>
+        <li><strong>Nội dung tệp truyền tải:</strong> Mọi tệp tin bạn gửi và nhận đều được chuyển trực tiếp (P2P) giữa thiết bị gửi và thiết bị nhận qua kết nối nội bộ. Tệp tin không bao giờ đi qua hoặc lưu lại trên bất kỳ máy chủ từ xa nào.</li>
+        <li><strong>Thông tin định danh cá nhân (PII):</strong> Ứng dụng không yêu cầu đăng ký tài khoản, không yêu cầu địa chỉ email, số điện thoại hay thông tin tài khoản ngân hàng.</li>
+        <li><strong>Dữ liệu phân tích và theo dõi hành vi:</strong> Ứng dụng không tích hợp bất kỳ công cụ theo dõi hành vi (analytics), SDK quảng cáo hay cookie theo dõi nào từ bên thứ ba.</li>
+      </ul>
+
+      <h2>3. Các quyền truy cập trên thiết bị & Lý do sử dụng</h2>
+      <p>Để thực hiện việc tìm kiếm thiết bị và truyền tệp cục bộ một cách thuận tiện, ứng dụng yêu cầu một số quyền hệ thống tối thiểu sau:</p>
+
+      <div class="permission-box">
+        <div class="permission-title">🌐 Mạng & Wi-Fi (INTERNET, ACCESS_WIFI_STATE, MULTICAST)</div>
+        <div class="permission-desc">
+          <strong>Mục đích:</strong> Cho phép ứng dụng phát hiện các thiết bị cùng mở Hub trong mạng Wi-Fi/LAN cục bộ thông qua giao thức mDNS/Zeroconf và thiết lập kênh truyền dữ liệu trực tiếp tốc độ cao giữa hai máy. Không có dữ liệu nào được gửi ra ngoài Internet.
+        </div>
+      </div>
+
+      <div class="permission-box">
+        <div class="permission-title">📁 Bộ nhớ & Phương tiện (Storage, Media Images, Video, Audio)</div>
+        <div class="permission-desc">
+          <strong>Mục đích:</strong> Cho phép bạn chọn các tệp, tài liệu, hình ảnh hoặc video muốn chia sẻ và lưu các tệp bạn nhận được vào bộ nhớ của máy. Ứng dụng chỉ đọc các tệp bạn tự tay chọn, tuyệt đối không quét ngầm bộ nhớ thiết bị.
+        </div>
+      </div>
+
+      <div class="permission-box">
+        <div class="permission-title">📷 Máy ảnh (Camera)</div>
+        <div class="permission-desc">
+          <strong>Mục đích:</strong> Chỉ dùng để quét mã QR giúp kết nối và xác thực nhanh giữa hai thiết bị (ghép đôi thiết bị). Luồng video từ máy ảnh được xử lý trực tiếp trên thiết bị (on-device) theo thời gian thực và không bao giờ chụp, ghi hình hay lưu trữ ảnh/video.
+        </div>
+      </div>
+
+      <div class="permission-box">
+        <div class="permission-title">👤 Danh bạ (Contacts) — Tùy chọn</div>
+        <div class="permission-desc">
+          <strong>Mục đích:</strong> Chỉ kích hoạt khi bạn chủ động nhấn nút chia sẻ liên hệ (xuất danh thiếp điện tử vCard) sang thiết bị khác. Ứng dụng không đồng bộ hay thu thập danh bạ của bạn lên bất kỳ hệ thống đám mây nào.
+        </div>
+      </div>
+
+      <h2>4. Cơ chế lưu trữ & Xóa dữ liệu</h2>
+      <p>
+        Toàn bộ tệp nhận được đều nằm hoàn toàn dưới quyền sở hữu của bạn trong thư mục tải về của thiết bị. Bạn có toàn quyền xem, sao chép hoặc xóa bỏ các tệp tin này bất kỳ lúc nào thông qua trình quản lý tệp của thiết bị hoặc trong màn hình quản lý của Hub.
+      </p>
+      <p>
+        Khi bạn gỡ cài đặt ứng dụng, các thiết lập tạm thời và bộ nhớ đệm nội bộ của Hub sẽ được hệ điều hành tự động dọn sạch.
+      </p>
+
+      <h2>5. Dịch vụ bên thứ ba & Quảng cáo</h2>
+      <p>
+        Ứng dụng hoàn toàn <strong>KHÔNG chứa quảng cáo</strong> (không dùng Google AdMob, Unity Ads, Facebook Audience Network...) và <strong>KHÔNG chia sẻ dữ liệu</strong> với bất kỳ đối tác thương mại, công ty quảng cáo hoặc mạng phân tích dữ liệu nào.
+      </p>
+
+      <h2>6. Bảo mật & Xác thực truyền nhận</h2>
+      <p>
+        Ứng dụng sử dụng mã ghép đôi PIN hoặc mã QR để đảm bảo bạn chỉ nhận và gửi tệp cho thiết bị được bạn cho phép. Bạn luôn có quyền chấp nhận hoặc từ chối mọi yêu cầu gửi tệp đến thiết bị của mình.
+      </p>
+
+      <h2>7. Quyền riêng tư của trẻ em</h2>
+      <p>
+        Ứng dụng không thu thập bất kỳ thông tin nhận dạng cá nhân nào từ bất kỳ ai, bao gồm cả trẻ em dưới 13 tuổi (hoặc độ tuổi tương đương theo luật pháp sở tại). Ứng dụng an toàn tuyệt đối cho người dùng ở mọi lứa tuổi.
+      </p>
+
+      <h2>8. Thay đổi chính sách quyền riêng tư</h2>
+      <p>
+        Chúng tôi có thể cập nhật Chính sách quyền riêng tư này định kỳ khi bổ sung tính năng mới. Mọi cập nhật sẽ được công bố công khai trên trang web này cùng với ngày cập nhật mới nhất.
+      </p>
+
+      <h2>9. Thông tin liên hệ</h2>
+      <p>
+        Nếu bạn có bất kỳ thắc mắc, phản hồi hoặc đóng góp nào liên quan đến Chính sách quyền riêng tư hoặc tính bảo mật của Hub, vui lòng liên hệ với nhóm phát triển qua:
+      </p>
+      <ul>
+        <li><strong>Đơn vị phát triển:</strong> Flutter-App-LL</li>
+        <li><strong>Mã nguồn / Hỗ trợ:</strong> <a href="https://github.com/Flutter-App-LL/privacy" target="_blank" rel="noopener noreferrer" style="color: var(--primary);">GitHub Repository & Issue Tracker</a></li>
+      </ul>
+    </main>
+
+    <!-- BẢN TIẾNG ANH -->
+    <main id="content-en" class="content-card hidden">
+      <h2>1. Introduction & Privacy Commitment</h2>
+      <p>
+        Welcome to <strong>Hub — Private Local File Hub</strong> ("the Application"). We are firmly committed to respecting and protecting your privacy and your control over your data.
+      </p>
+      <div class="highlight-card">
+        <p>
+          <strong>Core Commitment:</strong> Hub is engineered following a <em>Zero-Knowledge</em> architecture and operates exclusively via local peer-to-peer (P2P) networking. All transfers of files, photos, videos, and documents occur directly between your devices over your local Wi-Fi or LAN connection. We <strong>DO NOT</strong> collect, <strong>DO NOT</strong> upload to remote servers, and <strong>DO NOT</strong> sell any of your personal data.
+        </p>
+      </div>
+
+      <h2>2. Information Collection & Usage</h2>
+      <p>We respect your privacy to the fullest extent:</p>
+      <ul>
+        <li><strong>File Contents:</strong> All files you send and receive are transmitted directly (P2P) between the sending and receiving devices on your local network. Files never pass through or get stored on any cloud servers.</li>
+        <li><strong>Personally Identifiable Information (PII):</strong> The application requires no account registration, no login, no email address, phone number, or payment details.</li>
+        <li><strong>Analytics & Tracking:</strong> We do not include any third-party behavioral analytics, telemetry SDKs, or advertising cookies in the application.</li>
+      </ul>
+
+      <h2>3. Device Permissions & Purpose of Use</h2>
+      <p>To enable local peer discovery and direct file transfers, Hub requires minimal system permissions:</p>
+
+      <div class="permission-box">
+        <div class="permission-title">🌐 Local Network & Wi-Fi (INTERNET, ACCESS_WIFI_STATE, MULTICAST)</div>
+        <div class="permission-desc">
+          <strong>Purpose:</strong> Allows the application to discover nearby devices running Hub on the same local Wi-Fi/LAN via standard mDNS/Zeroconf protocols and establish high-speed direct communication channels. No data leaves your local network.
+        </div>
+      </div>
+
+      <div class="permission-box">
+        <div class="permission-title">📁 Storage & Media Access (Storage, Images, Video, Audio)</div>
+        <div class="permission-desc">
+          <strong>Purpose:</strong> Allows you to browse and select files, photos, or videos to send, and save received files to your device's storage. The app only accesses items you specifically choose to share.
+        </div>
+      </div>
+
+      <div class="permission-box">
+        <div class="permission-title">📷 Camera (CAMERA)</div>
+        <div class="permission-desc">
+          <strong>Purpose:</strong> Strictly used to scan QR codes for rapid device pairing and connection authorization. Camera feed is processed in real time entirely on-device; no images or video recordings are captured or stored.
+        </div>
+      </div>
+
+      <div class="permission-box">
+        <div class="permission-title">👤 Contacts (READ_CONTACTS) — Optional</div>
+        <div class="permission-desc">
+          <strong>Purpose:</strong> Only activated when you explicitly initiate sharing a specific contact card (vCard) with a paired device. Your address book is never synced or uploaded to any remote server.
+        </div>
+      </div>
+
+      <h2>4. Data Storage & Deletion</h2>
+      <p>
+        All received files reside entirely on your device's local filesystem under your direct management. You may view, move, or permanently delete them at any time via your device's file manager or within Hub.
+      </p>
+      <p>
+        Uninstalling the application will immediately remove all internal application caches and settings maintained by the operating system.
+      </p>
+
+      <h2>5. Third-Party Services & Advertising</h2>
+      <p>
+        Hub contains <strong>no advertisements</strong> (no Google AdMob, Unity Ads, Facebook Audience Network, etc.) and does not share, rent, or trade your information with any third-party marketing companies or data brokers.
+      </p>
+
+      <h2>6. Security & Transfer Verification</h2>
+      <p>
+        Connections between devices can be verified using cryptographic pairing pins or QR code handshakes. You maintain continuous control and must approve any incoming file transfer requests.
+      </p>
+
+      <h2>7. Children's Privacy</h2>
+      <p>
+        Because Hub collects no personal identification data, it does not knowingly collect information from children under 13 (or under the applicable age of digital consent in your jurisdiction). The app is completely safe for users of all ages.
+      </p>
+
+      <h2>8. Changes to This Privacy Policy</h2>
+      <p>
+        We may update this Privacy Policy from time to time as features evolve. Any changes will be published directly on this web page along with an updated effective date.
+      </p>
+
+      <h2>9. Contact Information</h2>
+      <p>
+        If you have any questions, feedback, or concerns regarding this Privacy Policy or Hub's security practices, please reach out to:
+      </p>
+      <ul>
+        <li><strong>Developer / Organization:</strong> Flutter-App-LL</li>
+        <li><strong>Source Code & Support:</strong> <a href="https://github.com/Flutter-App-LL/privacy" target="_blank" rel="noopener noreferrer" style="color: var(--primary);">GitHub Repository & Issue Tracker</a></li>
+      </ul>
+    </main>
+
+    <footer>
+      <p>&copy; 2026 Hub — Flutter-App-LL. All rights reserved.</p>
+    </footer>
+  </div>
+
+  <script>
+    function switchLang(lang) {
+      const isVi = lang === 'vi';
+      
+      document.getElementById('content-vi').classList.toggle('hidden', !isVi);
+      document.getElementById('content-en').classList.toggle('hidden', isVi);
+      
+      document.getElementById('date-vi').classList.toggle('hidden', !isVi);
+      document.getElementById('date-en').classList.toggle('hidden', isVi);
+
+      document.getElementById('btn-vi').classList.toggle('active', isVi);
+      document.getElementById('btn-en').classList.toggle('active', !isVi);
+
+      document.documentElement.lang = lang;
+    }
+  </script>
+</body>
+</html>
