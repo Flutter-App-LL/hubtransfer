@@ -2,7 +2,7 @@
 ### Ứng dụng: Hub — Private Local File Hub
 
 > **Đơn vị phát triển / Developer:** Flutter-App-LL  
-> **Trang chính sách trực tuyến / Live Web:** [https://flutter-app-ll.github.io/privacy/](https://flutter-app-ll.github.io/privacy/)  
+> **Trang chính sách trực tuyến / Live Web:** [[[https://flutter-app-ll.github.io/privacy/](https://flutter-app-ll.github.io/hubtransfer/)]](https://flutter-app-ll.github.io/hubtransfer/)
 > **Ngày có hiệu lực / Effective Date:** 15 tháng 09, 2026 (September 15, 2026)  
 > **Phiên bản / Version:** 1.0
 
